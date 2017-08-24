@@ -1,0 +1,15 @@
+/media/hoangnh/PhanMem/PlantCleaf2017Dataset/Fruit,Flower/2/182328.jpg 2
+/media/hoangnh/PhanMem/PlantCleaf2017Dataset/Fruit,Flower/317219/280795.jpg 0
+/media/hoangnh/PhanMem/PlantCleaf2017Dataset/Fruit,Flower/58575/182328.jpg 1
+/media/hoangnh/PhanMem/PlantCleaf2017Dataset/Fruit,Flower/2/182328.jpg 2
+/media/hoangnh/PhanMem/PlantCleaf2017Dataset/Fruit,Flower/317219/280795.jpg 0
+/media/hoangnh/PhanMem/PlantCleaf2017Dataset/Fruit,Flower/58575/182328.jpg 1
+/media/hoangnh/PhanMem/PlantCleaf2017Dataset/Fruit,Flower/2/182328.jpg 2
+/media/hoangnh/PhanMem/PlantCleaf2017Dataset/Fruit,Flower/317219/280795.jpg 0
+/media/hoangnh/PhanMem/PlantCleaf2017Dataset/Fruit,Flower/58575/182328.jpg 1
+/media/hoangnh/PhanMem/PlantCleaf2017Dataset/Fruit,Flower/2/182328.jpg 2
+/media/hoangnh/PhanMem/PlantCleaf2017Dataset/Fruit,Flower/317219/280795.jpg 0
+/media/hoangnh/PhanMem/PlantCleaf2017Dataset/Fruit,Flower/58575/182328.jpg 1
+/media/hoangnh/PhanMem/PlantCleaf2017Dataset/Fruit,Flower/2/182328.jpg 2
+/media/hoangnh/PhanMem/PlantCleaf2017Dataset/Fruit,Flower/317219/280795.jpg 0
+/media/hoangnh/PhanMem/PlantCleaf2017Dataset/Fruit,Flower/58575/182328.jpg 1

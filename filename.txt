@@ -1,0 +1,3 @@
+/media/hoangnh/PhanMem/PlantCleaf2017Dataset/Fruit,Flower/2/182328.jpg
+/media/hoangnh/PhanMem/PlantCleaf2017Dataset/Fruit,Flower/317219/280795.jpg
+/media/hoangnh/PhanMem/PlantCleaf2017Dataset/Fruit,Flower/58575/182328.jpg
