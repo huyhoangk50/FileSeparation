@@ -1,0 +1,13 @@
+/media/data/datasets/hoang/part1/C/35.jpg 0
+/media/data/datasets/hoang/part1/C/37.jpg 0
+/media/data/datasets/hoang/part1/1/4.jpg 4
+/media/data/datasets/hoang/part1/1/0.jpg 4
+/media/data/datasets/hoang/part1/1/6.jpg 4
+/media/data/datasets/hoang/part1/B/12.jpg 2
+/media/data/datasets/hoang/part1/B/20.jpg 2
+/media/data/datasets/hoang/part2/A/65.jpg 3
+/media/data/datasets/hoang/part2/A/59.jpg 3
+/media/data/datasets/hoang/part2/C/166.jpg 0
+/media/data/datasets/hoang/part2/C/165.jpg 0
+/media/data/datasets/hoang/part2/B/150.jpg 2
+/media/data/datasets/hoang/part2/B/146.jpg 2

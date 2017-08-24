@@ -15,7 +15,9 @@ def assignLabel(rootPath, dictPath):
     try:
         dictionary = pd.read_csv(dictPath)
         ids = dictionary["id"]
+        ids = ids.as_matrix()
         csv_labels = dictionary["label"]
+        csv_labels=csv_labels.as_matrix()
         nIds = ids.shape[0]
 
     except IOError, EmptyDataError:
@@ -27,15 +29,24 @@ def assignLabel(rootPath, dictPath):
     for sub_dir_flower in os.listdir(rootPath):
             folderPath = os.path.join(rootPath, sub_dir_flower)
             if dictionary is not None:
-                # print str(sub_dir_flower)
-                temp = ids[ids == int(sub_dir_flower)]
-                if temp.index.size != 0:
-                    label_id = csv_labels[temp.index[0]]
+                try:
+                    # print sub_dir_flower
+                    # print ids
+                    temp = np.where(ids == int(sub_dir_flower))[0]
+                except ValueError:
+                    temp = np.where(ids == str(sub_dir_flower))[0]
+                    # print 'error'
+                    # print temp
+                if temp.shape[0] != 0:
+                    label_id = csv_labels[temp[0]]
                 else: 
                     label_id = nIds
-                    nIds = nIds + 1
-            subDirs.append(sub_dir_flower)
-            subDirLabels.append(label_id)
+                    print ids, sub_dir_flower
+                    ids = np.append(ids, sub_dir_flower)
+                    csv_labels = np.append(csv_labels, label_id)
+                    nIds = nIds + 1 
+            # subDirs.append(sub_dir_flower)
+            # subDirLabels.append(label_id)
             for img in os.listdir(folderPath):
                 try:
                     imagePath = os.path.join(folderPath, img)
@@ -49,8 +60,14 @@ def assignLabel(rootPath, dictPath):
                 dirs.append(imagePath)
                 imageLabels.append(label_id)
             if dictionary is None:
+                if 'ids' not in locals():
+                    ids = np.array(sub_dir_flower)
+                    csv_labels = np.array(label_id)
+                else:
+                    ids = np.append(ids, sub_dir_flower)
+                    csv_labels = np.append(csv_labels, label_id)
                 label_id = label_id + 1
-    dictRecords = np.asarray([subDirs, subDirLabels]).T
+    dictRecords = np.asarray([ids, csv_labels]).T
     with open(dictPath, 'wb') as dictFile:
         writer = csv.writer(dictFile)
         writer.writerow(FIELD_NAMES)
